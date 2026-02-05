@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Five Box Layout</title>
+
+    <style>
+        /* ===== Reset ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        /* ===== Container ===== */
+        .box-container {
+            width: 100%;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        /* ===== Individual Box ===== */
+        .box {
+            height: 180px;
+            background: linear-gradient(145deg, #2e2e2e, #3a3a3a);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #444;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+            transition: 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 35px rgba(180, 180, 180, 0.25);
+        }
+
+        .box h3 {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #e0e0e0;
+        }
+
+        /* ===== Bottom Button ===== */
+        .action-btn {
+            padding: 16px 45px;
+            font-size: 17px;
+            font-weight: 700;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            color: #000;
+            background: linear-gradient(135deg, #bdbdbd, #f5f5f5);
+            transition: 0.3s;
+        }
+
+        .action-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+        }
+
+        /* ===== Responsive tweak ===== */
+        @media (max-width: 600px) {
+            .box {
+                height: 150px;
+            }
+
+            .box h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Boxes -->
+     <h1>FORCE</h1>
+     <br><br><br>
+
+     <h3>
+        Force (Bol) in Physics
+1. What is Force? (Definition)
+
+In physics, force is defined as:
+
+A force is a push or a pull which can change the shape, size, speed, direction, or state of rest of a body.
+
+In simple words:
+
+Force is anything that can:
+
+Start motion
+
+Stop motion
+
+Change speed
+
+Change direction
+
+Deform an object
+
+⚠️ Important:
+
+Force is a vector quantity
+
+It has magnitude and direction
+
+SI unit of force is newton (N)
+     </h3>
+
+     <br><br><br>
+
+     <h3>2. Effects of Force
+
+A force can:
+
+Change the state of rest or motion
+
+Change speed (increase or decrease)
+
+Change direction of motion
+
+Change shape or size of an object
+
+Example:
+
+Kicking a football → changes speed
+
+Catching a moving ball → stops motion
+
+Pressing clay → changes shape</h3>
+
+<br><br><br>
+
+<h3>3. Types of Force
+
+Forces are mainly classified into two broad types:</h3>
+
+<br><br><br>
+
+<h3>A. Contact Forces
+Definition:
+
+Forces that act only when two bodies are in physical contact are called contact forces.</h3>
+
+<br><br><br>
+
+<h3>1. Muscular Force
+Definition:
+
+The force exerted by muscles of living beings is called muscular force.
+
+Examples:
+
+Lifting a bag
+
+Pushing a table
+
+Pulling a cart
+
+⚠️ Acts only when muscles are used.</h3>
+
+<br><br><br>
+
+<h3>2. Frictional Force
+Definition:
+
+The force that opposes the relative motion between two surfaces in contact is called friction.
+
+Examples:
+
+Walking without slipping
+
+Brakes stopping a car
+
+Rubbing hands to produce heat
+
+⚠️ Direction: Always opposite to motion</h3>
+
+<br><br><br>
+
+
+<h3>B. Non-Contact Forces
+Definition:
+
+Forces that act without physical contact between objects are called non-contact forces.</h3>
+
+<br><br><br>
+
+<h3>1. Gravitational Force
+Definition:
+
+The force by which the Earth attracts objects towards its center is called gravitational force.
+
+Examples:
+
+A stone falling to the ground
+
+Rain falling from clouds
+
+Objects having weight
+
+⚠️ Always attractive in nature.</h3>
+
+<br><br><br>
+
+<h3>2. Magnetic Force
+Definition:
+
+The force exerted by a magnet on magnetic materials or another magnet is called magnetic force.
+
+Examples:
+
+Magnet attracting iron nails
+
+Repulsion between like poles of magnets
+
+Compass needle aligning north-south
+
+⚠️ Can be attractive or repulsive.</h3>
+
+<br><br><br>
+
+<h3>3. Electrostatic Force
+Definition:
+
+The force between electrically charged bodies is called electrostatic force.
+
+Examples:
+
+Balloon sticking to a wall after rubbing
+
+Paper bits attracted by a charged comb
+
+Repulsion between like charges
+
+⚠️ Acts even in vacuum.</h3>
+
+<br><br><br>
+
+<h3>4. Applied Force
+Definition:
+
+A force that is applied to an object by a person or another object is called applied force.
+
+Examples:
+
+Pushing a door
+
+Pulling a rope
+
+Kicking a football</h3>
+
+<br><br><br>
+
+<h3>5. Normal Force
+Definition:
+
+The force exerted by a surface perpendicular to the object resting on it is called normal force.
+
+Examples:
+
+A book resting on a table
+
+A person standing on the ground
+
+⚠️ Always acts perpendicular to the surface.</h3>
+
+<br><br><br>
+
+<h3>6. Tension Force
+Definition:
+
+The force transmitted through a string, rope, or cable when it is pulled tight is called tension.
+
+Examples:
+
+Hanging a bucket from a rope
+
+Pulling a load with a rope</h3>
+
+<br><br><br>
+
+<h3>7. Air Resistance (Drag Force)
+Definition:
+
+The force that opposes the motion of an object moving through air is called air resistance.
+
+Examples:
+
+Falling feather reaching ground slowly
+
+Parachute slowing down a skydiver</h3>
+
+<br><br><br>
+
+
+        
+       
+   <br><br><br><br>
+    <!-- Bottom Button -->
+    <button class="action-btn" onclick="backH()">CONTINUE</button>
+    <script src="3.js"></script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>CALCULATOR</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color:white;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            width: 600px;
+        }
+
+        .box {
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .box input {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: none;
+            outline: none;
+        }
+
+        .box button {
+            padding: 10px 25px;
+            margin-bottom: 15px;
+            background-color: #00ff99;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 15px;
+        }
+
+        .box button:hover {
+            background-color: #00cc7a;
+        }
+
+        .box h1 {
+            color: white;
+            font-size: 20px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="box">
+        <h1>MULTIPLICATION </h1>
+        <br>
+        <input type="number" id="input1" placeholder="NUMBER 1">
+        <h1>✖️</h1>
+        <br>
+        <input type="number" id="input2" placeholder="NUMBER 2">
+        <button onclick="result1()">Submit</button>
+        <h1>RESULT</h1>
+        <br>
+        <h1 id="value"></h1>
+    </div>
+
+    <div class="box">
+        <h1>DIVIDE </h1>
+        <br>
+        <input type="number" id="input3" placeholder="NUMBER 1">
+        <h1>➗</h1>
+        <br>
+        <input type="number" id="input4"  placeholder="NUMBER 2">
+        <button onclick="result2()">Submit</button>
+        <h1>RESULT</h1>
+        <br>
+        <h1 id="value2"></h1>
+    </div>
+
+    <div class="box">
+        <h1>SUBTRACT </h1>
+        <br>
+        <input type="number" id="input5" placeholder="NUMBER 1">
+        <h1>➖</h1>
+        <br>
+        <input type="number" id="input6" placeholder="NUMBER 2">
+        <button onclick="result3()">Submit</button>
+        <h1>RESULT</h1>
+        <br>
+        <h1 id="value3"></h1>
+    </div>
+
+    <div class="box">
+        <h1>ADDED</h1>
+        <br>
+        <input type="number" id="input7" placeholder="NUMBER 1">
+        <h1>➕</h1>
+        <br>
+        <input type="number" id="input8" placeholder="NUMBER 2">
+        <button onclick="result4()">Submit</button>
+        <h1>RESULT</h1>
+        <br>
+        <h1 id="value4"></h1>
+    </div>
+
+<!--root over-->
+
+
+
+
+  <div class="box">
+        <h1>ROOT SQUARE</h1>
+        <br>
+        <input type="number" id="input10" placeholder="√">
+        <h1>√</h1>
+        <br>
+        
+        <button onclick="result40()">Submit</button>
+        <h1>RESULT</h1>
+        <br>
+        <h1 id="value10"></h1>
+    </div>
+
+
+
+
+    <div class="box">
+        <h1>ROOT CUBE</h1>
+        <br>
+        <input type="number" id="input20" placeholder="∛">
+        <h1>∛</h1>
+        <br>
+       
+        <button onclick="result30()">Submit</button>
+        <h1>RESULT</h1>
+        <br>
+        <h1 id="value50"></h1>
+    </div>
+<footer>
+    THIS CALCULATOR WAS CREATED BY MAHIR RASHID
+</footer>
+</div>
+
+
+
+
+<script src="coustom.js"></script>
+</body>
+</html>

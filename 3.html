@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Five Box Layout</title>
+
+    <style>
+        /* ===== Reset ===== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            background: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        /* ===== Container ===== */
+        .box-container {
+            width: 100%;
+            max-width: 1100px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        /* ===== Individual Box ===== */
+        .box {
+            height: 180px;
+            background: linear-gradient(145deg, #2e2e2e, #3a3a3a);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #444;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
+            transition: 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 0 35px rgba(180, 180, 180, 0.25);
+        }
+
+        .box h3 {
+            font-size: 20px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: #e0e0e0;
+        }
+
+        /* ===== Bottom Button ===== */
+        .action-btn {
+            padding: 16px 45px;
+            font-size: 17px;
+            font-weight: 700;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            color: #000;
+            background: linear-gradient(135deg, #bdbdbd, #f5f5f5);
+            transition: 0.3s;
+        }
+
+        .action-btn:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.6);
+        }
+
+        /* ===== Responsive tweak ===== */
+        @media (max-width: 600px) {
+            .box {
+                height: 150px;
+            }
+
+            .box h3 {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Boxes -->
+        <h1>MOTION</h1>
+        <br><br>
+        <h3>1.Motion (Goti) in Physics
+1. Definition of Motion (Goti)
+
+In physics, motion is defined as:
+
+A body is said to be in motion if its position changes with time with respect to a chosen reference point or observer.
+
+Key points you must understand (no shortcuts):
+
+Motion is relative, not absolute.
+
+Without a reference point, motion has no meaning.
+
+Time must be involved.
+
+Example:
+
+A student sitting inside a moving bus is:
+
+At rest with respect to the bus
+
+In motion with respect to the road or trees outside
+
+So, motion depends on who is observing and from where.</h3>
+<br><br>
+
+<h3>2. Why Reference Point is Mandatory
+
+Physics does not accept vague statements like:
+
+“The object is moving.”
+
+You must say:
+
+“The object is moving with respect to something.”
+
+Example:
+
+A book on a table:
+
+At rest with respect to the table
+
+In motion with respect to the Sun (because Earth is moving)
+
+This is why we say:
+
+There is no absolute rest or absolute motion in classical mechanics.</h3>
+
+<br><br>
+<h3>3. Types of Motion (Prokar of Goti)
+
+In basic physics, motion is mainly classified into the following types:
+
+A. Translational Motion
+Definition:
+
+When all points of a body move the same distance in the same direction in the same time, the motion is called translational motion.
+
+The body moves as a whole.
+
+Subtypes of Translational Motion:
+1. Rectilinear Motion
+Definition:
+
+Motion of a body along a straight line is called rectilinear motion.
+
+Examples:
+
+A car moving on a straight road
+
+A stone falling vertically downward
+
+A train moving on a straight track
+
+This is the simplest form of motion and is heavily used in kinematics.
+<br>
+2. Curvilinear Motion
+Definition:
+
+Motion of a body along a curved path is called curvilinear motion.
+
+Examples:
+
+A thrown ball following a curved path
+
+A car taking a bend on a curved road
+
+Water flowing through a curved pipe
+
+⚠️ Important:
+
+Curvilinear motion is still translational motion
+
+Only the path is curved
+<br><br><br>
+B. Rotational Motion
+Definition:
+
+When a body rotates about a fixed axis, it is said to be in rotational motion.
+
+Here:
+
+The axis may be inside or outside the body
+
+Different points move in circular paths
+
+Examples:
+
+A ceiling fan rotating about its central axis
+
+Earth rotating about its own axis
+
+A wheel rotating around its axle
+
+🔴 Key difference from translational motion:
+
+In rotational motion, different points have different linear speeds
+<br>
+C. Circular Motion
+Definition:
+
+Motion of a body along the circumference of a circle is called circular motion.
+
+Examples:
+
+A stone tied to a string and whirled in a circle
+
+The second hand of a clock
+
+A satellite revolving around Earth
+
+⚠️ Important Concept:
+
+Circular motion is a special case of curvilinear motion
+
+Even if speed is constant, velocity is changing (direction changes)
+<br>
+D. Oscillatory Motion
+Definition:
+
+A motion in which a body moves to and fro about a fixed mean position repeatedly is called oscillatory motion.
+
+Key properties:
+
+There is a mean (equilibrium) position
+
+Motion is periodic
+
+Examples:
+
+Simple pendulum
+
+Swing in a playground
+
+Mass attached to a spring
+<br>
+E. Periodic Motion
+Definition:
+
+A motion that repeats itself after equal intervals of time is called periodic motion.
+
+Examples:
+
+Earth’s revolution around the Sun
+
+Rotation of Earth about its axis
+
+Oscillation of a pendulum
+
+⚠️ Relation:
+
+All oscillatory motions are periodic
+
+But not all periodic motions are oscillatory
+<br>
+F. Random Motion
+Definition:
+
+Motion in which a body moves in an irregular and unpredictable path is called random motion.
+
+Examples:
+
+Motion of gas molecules
+
+Movement of dust particles in air
+
+Brownian motion
+
+This motion has:
+
+No fixed path
+
+No fixed direction
+
+4. Rest and Motion Are Relative
+
+This is an exam-favorite concept.
+
+Statement:
+
+Rest and motion are relative terms and depend on the observer.
+
+Example:
+
+A passenger sleeping in a bus:
+
+At rest relative to the bus
+
+In motion relative to the road
+
+There is no universal frame where everything is at rest.
+
+5. Summary Table (For Quick Revision)
+Type of Motion	Main Feature	Example
+Rectilinear	Straight-line path	Falling stone
+Curvilinear	Curved path	Thrown ball
+Rotational	About fixed axis	Ceiling fan
+Circular	Circular path	Satellite
+Oscillatory	To and fro motion	Pendulum
+Periodic	Repeats in equal time	Earth’s revolution
+Random	Irregular path	Gas molecules</h3>
+       
+   <br><br><br><br>
+    <!-- Bottom Button -->
+    <button class="action-btn" onclick="back()">CONTINUE</button>
+    <script src="3.js"></script>
+</body>
+</html>
