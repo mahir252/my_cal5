@@ -26,8 +26,15 @@ function gofile(){
          window.location.href="4.html"
 
     }
+    else if(value ==="chemistry" && value ==="biology"){
+        alert("THIS SUBJECT NOT AVAILABLE NOW")
+    }
+     else if(value ==="higher-math" && value ==="normal-math"){
+         alert("THIS SUBJECT NOT AVAILABLE NOW ")
+     }
     
     else{
-        alert("NO RESULT FOUND")
+        alert("NO RESULT FOUND.YOU CAN SEARCH =physics-force, OR =physics-motion")
     }
+
 }
